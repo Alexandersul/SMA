@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http:schemas.android.com/tools"
@@ -43,6 +44,66 @@
         android:text="Greatings"
         android:textSize="20sp"/>
 
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+        xmlns:app="http://schemas.android.com/apk/res-auto"  
+        xmlns:tools="http://schemas.android.com/tools"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"  
+        tools:context="example.javatpoint.com.implicitintent.MainActivity">
+    
+        <EditText  
+            android:id="@+id/editText"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_marginEnd="8dp"  
+            android:layout_marginStart="8dp"  
+            android:layout_marginTop="60dp"  
+            android:ems="10"  
+            app:layout_constraintEnd_toEndOf="parent"  
+            app:layout_constraintHorizontal_bias="0.575"  
+            app:layout_constraintStart_toStartOf="parent"  
+            app:layout_constraintTop_toTopOf="parent" />   
+
+        <Button
+            android:id="@+id/bClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clicked"
+            android:text="bShare"/>
+    
+    </android.support.constraint.ConstraintLayout>  
+    
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+        xmlns:app="http://schemas.android.com/apk/res-auto"  
+        xmlns:tools="http://schemas.android.com/tools"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"  
+        tools:context="example.javatpoint.com.implicitintent.MainActivity">
+    
+        <EditText  
+            android:id="@+id/editText"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_marginEnd="8dp"  
+            android:layout_marginStart="8dp"  
+            android:layout_marginTop="60dp"  
+            android:ems="10"  
+            app:layout_constraintEnd_toEndOf="parent"  
+            app:layout_constraintHorizontal_bias="0.575"  
+            app:layout_constraintStart_toStartOf="parent"  
+            app:layout_constraintTop_toTopOf="parent" />   
+
+        <Button
+            android:id="@+id/bClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clicked"
+            android:text="bSearch"/>
+
+    </android.support.constraint.ConstraintLayout> 
+
     <Button
             android:id="@+id/alertbutton"
             android:layout_width="match_parent"
@@ -51,4 +112,16 @@
             android:text="Choice"
             android:textSize="20dp"/>
 
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <resources>
+        <string-array name="planets_array">
+            <item>blue</item>
+            <item>red</item>
+            <item>purple</item>
+        </string-array>
+    </resources>    
 </RelativeLayout>
